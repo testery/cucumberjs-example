@@ -14,6 +14,7 @@ Feature: Navigation
 
   @fail
   @excludeTagOne
+  @includeTagThree
   Scenario: This test will fail
     When I navigate to "http://www.google.com"
     Then the page title is 'Not Google'
@@ -21,6 +22,7 @@ Feature: Navigation
 
   @ignore
   @excludeTagTwo
+  @includeTagThree
   Scenario: User Goes to Amazon
     When I navigate to 'http://www.amazon.com'
     Then the page title is "This test should not run since it is ignored"
